@@ -1,0 +1,715 @@
+/*** BASE STYLING ***/
+
+body {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+/* CENTER IMAGES */
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+
+/*** HEADER ***/
+
+header {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+#header-nav {
+    background: #EDEAE5;
+    border-radius: 0;
+    border: 0;
+    height: 75px;
+}
+
+
+/* LOGO IMAGE */
+
+#logo {
+    background: url('../images/logo.png') no-repeat;
+    width: 135px;
+    height: 42px;
+    margin-top: 15px;
+    margin-left: 75px;
+    margin-right: 15px;
+}
+
+
+/* COMPANY NAME */
+
+.navbar-header a:hover,
+.navbar-header a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand h1,
+.navbar-brand span {
+    color: #000;
+    text-transform: uppercase;
+}
+
+.navbar-brand h1 {
+    font-size: 1.25em;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-brand span {
+    font-size: 1em;
+}
+
+
+/* MENU BUTTON */
+
+.btn-primary {
+    position: relative;
+    top: 18px;
+    left: 100%;
+    display: inline-block;
+    height: 35px;
+    width: 155px;
+    color: #026670;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #EDEAE5;
+    border-color: #026670;
+    text-align: right;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+button a,
+button a:hover,
+button a:focus {
+    text-decoration: none;
+}
+
+
+/* MENU BUTTON -- WHEN CLICKED */
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #026670;
+}
+
+
+/* MENU DROPDOWN -- WHEN OPEN */
+
+div.open .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 70px;
+    width: 90px;
+}
+
+
+/* MENU DROPDOWN-ITEMS -- WHEN OPEN */
+
+div.open .dropdown-menu a {
+    display: block;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* MENU DROPDOWN-ITEMS -- HOVER & FOCUS */
+
+div.open .dropdown-menu a:hover,
+div.open .dropdown-menu a:focus {
+    text-decoration: none;
+    color: #026670;
+    background-color: #EDEAE5;
+}
+
+
+/*** END OF HEADER ***/
+
+
+/*** MAIN CONTENT ***/
+
+#main-content {
+    position: relative;
+    top: 75px;
+    width: 100%;
+    height: auto;
+}
+
+div.blue-bg {
+    background-color: #9FEDD7;
+    width: 100%;
+    height: auto;
+}
+
+
+/*** HOME PAGE ***/
+
+
+/* SLIDESHOW CONTAINER */
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+
+/* NEXT AND PREVIOUS BUTTONS */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+/* POSITION THE NEXT BUTTON TO THE RIGHT */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* ON HOVER, ADD A BLACK BG COLOR
+WITH A LITTLE BIT SEE-THROUGH */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* CAPTION TEXT */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* NUMBER TEXT */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* DOTS/BULLETS/INDICATORS */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* FADING ANIMATION */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* DEFINITION OF CLIMATE CHANGE */
+
+#definition h2 {
+    padding-top: 10px;
+    font-size: 2em;
+    font-weight: 900;
+    color: #026670;
+}
+
+#definition p,
+#definition span {
+    font-size: 1em;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
+/* VIDEO ABOUT CLIMATE CHANGE */
+
+#video iframe,
+#others iframe {
+    box-shadow: 0 0 50px #026670;
+    border: 2px solid #026670;
+    display: block;
+    margin: 0 auto;
+}
+
+#video {
+    padding: 25px;
+}
+
+
+/* WHO ARE AFFECTED */
+
+div#impact {
+    background-color: #FCE181;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+#impact img {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 50px #fff;
+    border: 2px solid #fff;
+}
+
+#impact h2,
+#impact h3,
+.effects p {
+    text-align: center;
+    vertical-align: center;
+    padding: 10px;
+}
+
+#impact h2 {
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin: 30px 0;
+}
+
+#impact h3 {
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+#environment,
+#animals,
+#humans {
+    width: 300px;
+    background: #fff;
+    margin-top: 15px;
+    overflow: hidden;
+    height: 0;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 50px #026670;
+    border: 2px solid #026670;
+}
+
+#environment p,
+#animals p,
+#humans p {
+    font-size: 1em;
+    font-weight: 600;
+    color: #000;
+}
+
+#impact button {
+    color: #000;
+}
+
+div.labels {
+    height: auto;
+}
+
+div.labels h3 {
+    margin-left: -15%;
+}
+
+
+/*** ABOUT THE TEAM PAGE ***/
+
+div#team {
+    background-color: #9FEDD7;
+    padding-bottom: 100px;
+}
+
+#team h1 {
+    display: block;
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin: 30px 0;
+    text-align: center;
+} 
+}
+
+#team img {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 50px #026670;
+    border: 2px solid #026670;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* CODE FOR HOVER */
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.hover {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 16px 32px;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: center;
+    width: 250px;
+    height: 250px;
+}
+
+.individual:hover .image {
+    opacity: 0.3;
+}
+
+.individual:hover .hover {
+    opacity: 1;
+}
+
+
+/* PERSONAL INFORMATION
+-- SHOWS UP: HOVER IMAGES */
+
+div.personal-info {
+    position: relative;
+    margin: 0 auto;
+}
+
+.personal-info span {
+    color: #026670;
+    font-size: 2em;
+    font-weight: 900;
+    opacity: 1;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+/* ADDITIONAL INFO 
+-- BELOW IMAGES */
+
+.additional-info {
+    display: block;
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 250px;
+    height: auto;
+}
+
+.additional-info p {
+    color: #026670;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+/*** FAQS PAGE ***/
+
+div#faqs,
+div#email {
+    background-color: #9FEDD7;
+    padding-bottom: 100px;
+}
+
+#faqs h1,
+#email h1 {
+    text-align: center;
+    vertical-align: center;
+    padding: 10px;
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-top: 30px;
+}
+
+#faqs h2,
+#email h2 {
+    color: #026670;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+#faqs p {
+    color: #000;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 10px;
+}
+
+#faqs div.questions {
+    width: 50%;
+}
+
+#question1,
+#question2,
+#question3,
+#question4,
+#question5 {
+    width: 50%;
+    background: #fff;
+    margin-top: 15px;
+    overflow: hidden;
+    height: 0;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 2px solid #026670;
+    clear: left;
+}
+
+#faqs button {
+    color: #000;
+}
+
+div#email-form {
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 50px #026670;
+    border: 2px solid #026670;
+    width: auto;
+    height: auto;
+}
+
+#email-form {
+    display: block;
+    position: absolute;
+    left: 60%;
+    top: 15%;
+}
+
+#email-form form {
+    padding: 15px;
+    color: #000;
+}
+
+/*** OTHER ADVOCACY CAMPAIGNS AND EVENTS ***/
+
+div#others {
+    background-color: #9FEDD7;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+#others h1 {
+    vertical-align: center;
+    padding: 10px;
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-top: 30px;
+}
+
+#campaigns {
+    display: block;
+    margin-left: 15px;
+}
+
+#others h2 {
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+#others h3 {
+    color: #026670;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+#others p {
+    color: #000;
+    font-weight: 600;
+    font-size: 1em;
+    padding-top: 15px;
+}
+
+#events {
+    display: block;
+    margin-left: 15px;
+    clear: left;
+}
+
+
+/*** ABOUT THE ADVOCACY PAGE ***/
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
+div#advocacy {
+    background-color: #9FEDD7;
+    height: auto;
+}
+
+#advocacy section {
+    margin-bottom: 20px;
+}
+
+#advocacy section#help {
+    margin-bottom: 100px;
+}
+
+#advocacy h1 {
+    vertical-align: center;
+    padding: 10px;
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-top: 30px;
+}
+
+#advocacy h2 {
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+#advocacy p,
+#advocacy ol,
+#advocacy span {
+    color: #000;
+    font-weight: 600;
+    font-size: 1em;
+    padding-top: 15px;
+}
+
+section#background,
+section#mission,
+section#help {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    clear: left;
+}
+
+
+#content {
+    overflow: hidden;
+    height: 110px;
+    margin-bottom: 10px;
+}
+
+#advocacy button {
+    color: #000;
+}
+
+
+/*** FOOTER ***/
+
+footer {
+    width: 100%;
+    position: relative;
+}
+
+#contact {
+    background: #026670;
+}
+
+#contact-us {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FCE181;
+    font-size: 3em;
+    color: #9FEDD7;
+}
+
+#contact-details,
+#social-media {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FCE181;
+}
+
+#icons a:hover {
+    opacity: 0.7;
+}
+
+#copyright {
+    margin: 15px 0;
+}

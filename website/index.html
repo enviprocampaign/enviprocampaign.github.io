@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="icon" href="https://orig00.deviantart.net/ae54/f/2010/326/5/1/51fe8413c296378bbc0563daf917459b-d33emut.png" type="image/png">
+
+    <title>Home | Help Stop Climate Change</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVIGATION BAR-->
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- COMPANY NAME -->
+                    <a href="index.html">
+                        <div id="logo" class="pull-left img-responsive">
+                        </div>
+                        <div class="navbar-brand">
+                            <h1>Environmental Protection Campaign</h1>
+                            <span>on Climate Change</span>
+                        </div>
+                    </a>
+                    <!-- END OF COMPANY NAME -->
+                    <!-- MENU BUTTON/DROPDOWN -->
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary outline" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9776;</button>
+                        <!-- DROPDOWN MENU -->
+                        <div class="dropdown-menu">  
+                            <a class="dropdown-item" href="index.html">Home</a>
+                            <a class="dropdown-item" href="team.html">The Team</a>
+                            <a class="dropdown-item" href="advocacy.html">The Advocacy</a>
+                            <a class="dropdown-item" href="other.html">Other Advocacy Campaigns&amp;Events</a>
+                            <a class="dropdown-item" href="faqs.html">FAQs</a>
+                        </div>
+                        <!-- END OF DROPDOWN MENU -->
+                    </div>
+                    <!-- END OF MENU BUTTON/DROPDOWN -->
+                </div>
+                <!-- END OF NAVBAR-HEADER -->
+            </div>
+            <!-- END OF CONTAINER -->
+        </nav>
+        <!-- END OF NAVIGATION BAR -->
+    </header>
+    <!-- END OF HEADER -->
+    <!-- MAIN CONTENT -->
+    <div id="main-content">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/c1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/c2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/c3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/c4.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <div class="container blue-bg">
+            <!-- DEFINITION OF CLIMATE CHANGE -->
+            <section id="definition" class="col-sm-6">
+                <h2>What is Climate Change?</h2>
+                <p>Climate change is a change in the usual weather found in a place. This could be a change in how much rain a place usually gets in a year. Or it could be a change in a place's usual temperature for a month or season.
+                </p>
+                <p> Climate change is also a change in Earth's climate. This could be a change in Earth's usual temperature. Or it could be a change in where rain and snow usually fall on Earth.
+                </p>
+                <p>Weather can change in just a few hours. Climate takes hundreds or even millions of years to change.
+                </p> <span>Source: The National Aeronautics and Space Administration, 2014</span>
+            </section>
+            <!-- END OF DEFINITION -->
+            <!-- VIDEO ABOUT CLIMATE CHANGE -->
+            <div class="col-sm-6" id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ifrHogDujXw" allowfullscreen></iframe>
+            </div>
+            <!-- END OF VIDEO -->
+        </div>
+        <!-- END OF CLIMATE CHANGE -->
+        <!-- WHO ARE AFFECTED BY CLIMATE CHANGE -->
+        <div id="impact">
+            <!-- CONTAINER -->
+            <div class="container">
+                <!-- WHO ARE AFFECTED TEXT -->
+                <h2 class="text-center">Impact of Climate Change</h2>
+                <!-- END OF WHO ARE AFFECTED TEXT -->
+                <!-- ENVIRONMENT -->
+                <div class="img-responsive col-sm-4">
+                    <img src="images/environment.jpg" alt="Environment" />
+                    <section class="effects">
+                        <div class="labels text-center">
+                            <h3>On Environment</h3>
+                        </div>
+                        <div id="environment">
+                            <p>Sea levels are rising and oceans are becoming warmer. Longer, more intense droughts threaten crops, wildlife and freshwater supplies. Our planet’s diversity of life is at risk from the changing climate. (World Wildlife Fund, n.d.) </p>
+                        </div>
+                    </section>
+                    <button type="button" onclick="document.getElementById('environment').style.height='auto'"> &#9660;
+                    </button>
+                </div>
+                <!-- END OF ENVIRONMENT -->
+                <!-- HUMAN BEINGS -->
+                <div class="img-responsive col-sm-4">
+                    <img src="images/people.jpg" alt="Humans" />
+                    <section class="effects">
+                        <div class="labels text-center">
+                            <h3>On Humans</h3></div>
+                        <div id="humans">
+                            <p>Climate change can affect human health in two main ways: first, by changing the severity or frequency of health problems that are already affected by climate or weather factors; and second, by creating unprecedented or unanticipated health problems or health threats in places where they have not previously occurred. (U.S Global Change Research Program, n.d.)</p>
+                        </div>
+                    </section>
+                    <button type="button" onclick="document.getElementById('humans').style.height='auto'"> &#9660;
+                    </button>
+                </div>
+                <!-- END OF PEOPLE -->
+                <!-- ANIMALS -->
+                <div class="img-responsive col-sm-4">
+                    <img src="images/animals.jpg" alt="Animals" />
+                    <section class="effects">
+                        <div class="labels text-center">
+                            <h3>On Animals</h3>
+                        </div>
+                        <div id="animals">
+                            <p>Climate change is already having a significant impact on wild animals around the globe. Changes in climate are altering the timing of life cycles, causing species to shift where they live, and in some cases even leading to extinction. (World Wildlife Fund, n.d.)</p>
+                        </div>
+                    </section>
+                    <button type="button" onclick="document.getElementById('animals').style.height='auto'"> &#9660;
+                    </button>
+                </div>
+                <!-- END OF ANIMALS -->
+            </div>
+            <!-- END OF CONTAINER -->
+        </div>
+        <!-- END OF AFFECTED BY CLIMATE CHANGE -->
+    </div>
+    <!-- END OF MAIN CONTENT -->
+    <!-- FOOTER -->
+    <footer class="panel-footer" id="contact">
+        <!-- CONTACT US -->
+        <div class="container">
+            <div class="row">
+                <!-- CONTACT US TEXT -->
+                <div id="contact-us" class="col-sm-4 pull-left">
+                    <span>Contact Us</span>
+                </div>
+                <!-- END OF CONTACT US TEXT -->
+                <!-- SOCIAL MEDIA ACCOUNTS -->
+                <div class="col-sm-4">
+                    <span id="social-media">Social Media</span>
+                    <div id="icons" class="pull-left">
+                        <a target="_blank" href="https://www.facebook.com/Environmental-ProtectionCampaign-318181515325704/">
+                            <img src="images/facebook.ico" width="36" height="36" alt="Facebook Icon" />
+                        </a>
+                        <a target="_blank" href="https://www.twitter.com/Environcampaign/">
+                            <img src="images/twitter.png" alt="Twitter Icon" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <span id="contact-details">Contact Details</span>
+                    <span>Email Address: enviclimatechange@gmail.com</span>
+                    <span>Contact Number: +63 917 722 3724</span>
+                </div>
+            </div>
+        </div>
+        <!-- END OF SOCIAL MEDIA ACCOUNTS -->
+        <!-- COPYRIGHT -->
+        <div id="copyright" class="text-center">
+            &copy; Copyright Environmental Protection Campaign 2017
+        </div>
+        <!-- END OF COPYRIGHT -->
+    </footer>
+    <!-- END OF FOOTER -->
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    
+</body>
+
+</html>
