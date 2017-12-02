@@ -61,12 +61,12 @@ header {
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 0;
-    position: ;
+    position: relative;
 }
 
 .navbar-brand span {
     font-size: 1em;
-    position: static;
+    position: relative;
 }
 
 /* MENU BUTTON */
