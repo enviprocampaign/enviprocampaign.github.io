@@ -61,17 +61,19 @@ header {
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 0;
+    position: ;
 }
 
 .navbar-brand span {
     font-size: 1em;
+    position: static;
 }
-
 
 /* MENU BUTTON */
 
 .btn-primary {
     position: relative;
+    float:left;
     top: 18px;
     left: 100%;
     display: inline-block;
