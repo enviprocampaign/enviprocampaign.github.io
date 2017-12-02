@@ -27,8 +27,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// AUTOMATIC SLIDESHOW
-
+//Automatic slideshow 
 var slideIndex = 0;
 showSlides();
 
